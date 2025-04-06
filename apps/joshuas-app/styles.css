@@ -1,0 +1,8 @@
+/* I'd recommend keeping this wierd styling for main-area --- but you don't have to */
+main-area {
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
