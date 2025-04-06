@@ -1,6 +1,11 @@
 //this name must be the same as the folder title, and the component name
 export const app_name = "joshuas-app";
 
+//example code
+let username = "Josh";
+
+
+
 //creating the component (app), this here registers it under the name (see above) with HTML and a boot script
 export const app = _component("joshuas-app",html`
 
@@ -10,13 +15,18 @@ export const app = _component("joshuas-app",html`
 	<main-area>
 		
 		<!-- recommend adding app HTML here -->
+		Hello, ${username}
 
 	</main-area>
 
 `,boot_up_app)
 
+
+
+
 //the following function runs every time the app is *opened* (from a not-open state)
 function boot_up_app(app) {
+
 	//code
 	alert("Hello World!")
 }
